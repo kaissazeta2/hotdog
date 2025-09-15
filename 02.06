@@ -85,7 +85,7 @@ int main()
                 cout << "password: ";
                 cin >> pasword;
                 for (int w = 0; w < size; w++) {
-                    if (users[w].password == pasword) {
+                    if (users[w].password == pasword && users[w].name == username) {
                         t2 = 1;
                         ww=w;
                         break;
@@ -144,7 +144,7 @@ int main()
                                     for (int l = 0; l < bookssize; l++) {
                                         nums[l] = books[l];
                                     }
-                                    nums[size] = bookname;
+                                    nums[bookssize] = bookname;
                                     delete[] books;
                                     books = nums;
                                     bookssize+=1;
